@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bhumika Pitake | Portfolio</title>
+  <link rel="stylesheet" href="profile.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: linear-gradient(to bottom right, #f6f8ff, #ffffff);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #6C63FF, #594dff);
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #FF6584;
+    }
+
+    section {
+      padding: 40px 20px;
+      border-radius: 12px;
+      margin: 30px 0;
+    }
+
+    #about {
+      background-color: #f3f0ff;
+    }
+
+    #skills {
+      background-color: #e9e7fd;
+    }
+
+    #projects {
+      background-color: #fdfdff;
+    }
+
+    #contact {
+      background-color: #eef1ff;
+    }
+
+    h2 {
+      text-align: center;
+      color: #6C63FF;
+    }
+
+    .about-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .about-container img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 3px solid #6C63FF;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .skills-list {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      list-style: none;
+      flex-wrap: wrap;
+      padding: 0;
+    }
+
+    .skills-list li {
+      background: #d7d3ff;
+      padding: 10px 18px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      background: #f9f9ff;
+    }
+
+    form button {
+      background: #6C63FF;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background: #5148d9;
+    }
+
+    footer {
+      background: #3f3d56;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bhumika Ramesh Pitake</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">My Learning</a>
+      <a href="#contact">Contact</a>
+      <a href="Bhumika Pitake Resume.pdf" target="_blank">Resume</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <p>I’m a student and aspiring web developer, learning HTML, CSS, and JavaScript.<br>
+          I'm passionate about creating beautiful and user-friendly websites.</p>
+        <img src="pic.jpg" alt="Profile photo" />
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript (Basic)</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>My Learning Journey</h2>
+
+      <div class="card-container">
+        <div class="card">
+          <h3>📄 HTML & CSS Portfolio</h3>
+          <p>This portfolio helped me understand HTML structure and CSS styling for personal websites.</p>
+        </div>
+
+        <div class="card">
+          <h3>📱 Responsive Design Practice</h3>
+          <p>I explored Flexbox and media queries to create mobile-friendly layouts.</p>
+        </div>
+
+        <div class="card">
+          <h3>🧠 JavaScript Form Validation</h3>
+          <p>Created a simple alert-based form and learned basic DOM manipulation.</p>
+        </div>
+
+        <div class="card">
+          <h3>🎯 My Goals</h3>
+          <ul>
+            <li>Build a to-do app</li>
+            <li>Learn JavaScript deeply</li>
+            <li>Start backend (Node.js)</li>
+            <li>Contribute to open source</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Bhumika Ramesh Pitake. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.querySelector("form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thanks for contacting me! I’ll get back to you soon.");
+    });
+  </script>
+</body>
+</html>

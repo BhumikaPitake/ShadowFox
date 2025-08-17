@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chennai Super Kings | Official Fan Hub</title>
+  <link rel="stylesheet" href="IPL.css" />
+</head>
+<body>
+  <header>
+    <h1>Chennai Super Kings 🦁</h1>
+    <nav>
+      <a href="#schedule">Match Schedule</a>
+      <a href="#players">Player Profiles</a>
+      <a href="#news">Team News</a>
+      <a href="#poll">Fan Poll</a>
+    </nav>
+  </header>
+
+  <section id="schedule">
+    <h2>📅 CSK Match Schedule</h2>
+    <ul>
+      <li>CSK vs RCB - 20 Aug 2025</li>
+      <li>CSK vs GT - 25 Aug 2025</li>
+      <li>CSK vs MI - 30 Aug 2025</li>
+    </ul>
+  </section>
+
+  <section id="players">
+    <h2>🌟 CSK Player Profiles</h2>
+    <div class="player-card">
+      <img src="Dhoni.webp" alt="MS Dhoni" />
+      <h3>MS Dhoni</h3>
+      <p>Captain | Wicket-Keeper Batsman</p>
+    </div>
+    <div class="player-card">
+      <img src="jadeja.webp" alt="Ravindra Jadeja" />
+      <h3>Ravindra Jadeja</h3>
+      <p>All-Rounder</p>
+    </div>
+  </section>
+
+  <section id="news">
+    <h2>📰 Latest CSK News</h2>
+    <article>
+      <h3>CSK Crushes RCB in Opener!</h3>
+      <p>Dhoni finishes in style yet again! CSK seals the win with 6 wickets in hand.</p>
+    </article>
+  </section>
+
+  <section id="poll">
+    <h2>📊 CSK Fan Poll: Who's your MVP?</h2>
+    <form onsubmit="submitPoll(event)">
+      <label><input type="radio" name="player" value="MS Dhoni" /> MS Dhoni</label><br>
+      <label><input type="radio" name="player" value="Ravindra Jadeja" /> Ravindra Jadeja</label><br>
+      <label><input type="radio" name="player" value="Ruturaj Gaikwad" /> Ruturaj Gaikwad</label><br>
+      <button type="submit">Vote</button>
+    </form>
+    <div id="poll-result"></div>
+  </section>
+
+  <footer>
+    <p>Follow Chennai Super Kings:
+      <a href="#">Instagram</a> |
+      <a href="#">Twitter</a> |
+      <a href="#">Facebook</a>
+    </p>
+    <p>&copy; 2025 Chennai Super Kings Official Fan Site</p>
+  </footer>
+
+  <script src="IPL.js"></script>
+</body>
+</html>
